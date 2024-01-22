@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* FONTS  */
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif; 
+    --font2: 'Passion One', sans-serif;
+    --font3: 'Sriracha', cursive;
+}
+
+
+/* ---------- BODY ---------- */
+
+body{
+    min-width: 100vh;
+    background-color: burlywood;
+    font-family: var(--font1);
+}
+
+
+/* ---------- HEADER ---------- */
+
+header{
+    background-color: black;
+    color: white;
+
+    text-align: center;
+    padding: 5%;
+}
+
+header > h1{
+    font-variant: small-caps;
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+header > p{
+    font-size: 1.5rem;
+}
+
+header a, footer a, section a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+/* ---------- SECTION ---------- */
+
+section{
+    padding: 10vh 0 10vh 5%;
+    line-height: 1.5em;
+    font-size: 1.8rem;    
+}
+
+section > pre, section p{
+    white-space: pre-line;
+    font-family: var(--font3);
+    padding-bottom: 2%;
+}
+
+section.normal-verse{
+    background-color: white;
+}
+
+section.image-verse{
+    background-color: gray;
+    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.653);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.image-verse > pre{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.649);
+    color: rgb(201, 201, 201);
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 0 black;
+    
+}
+
+section.image-verse#img1{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+
+}
+
+section.image-verse#img2{
+    background-image: url(../imagens/background002.jpg);
+    
+
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer{
+    background-color: black;
+    color: white;
+
+    text-align: center;
+    padding: 1%;
+}
+
+footer p{
+    font-size: 1.2rem;
+}
